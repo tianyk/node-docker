@@ -1,0 +1,11 @@
+node_modules/
+.git/
+.temp/
+logs/
+
+config/dev.json
+
+docs/
+README.md
+docker/
+npm-debug.log
