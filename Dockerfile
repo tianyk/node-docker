@@ -1,5 +1,6 @@
 FROM node:14-alpine
 
+ADD ./apt-sources.list /etc/apt/sources.list
 RUN apk add --no-cache --virtual .gyp \
         python \
         make \
