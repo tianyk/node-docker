@@ -1,3 +1,10 @@
 require('sqlite3');
 require('grpc');
 require('node-sass');
+require('canvas');
+require('imagemin-mozjpeg');
+require('imagemin-pngquant');
+require('imagemin-giflossy');
+require('imagemin-guetzli');
+require('imagemin-webp');
+require('imagemin-svgo');
