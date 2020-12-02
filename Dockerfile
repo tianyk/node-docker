@@ -1,7 +1,7 @@
 FROM node:14-alpine
 
-ADD ./apt-sources.list /etc/apt/sources.list
-RUN apk add --no-cache --virtual .gyp \
+RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
+	&& apk add --no-cache --virtual .gyp \
         python \
         make \
         g++ \
