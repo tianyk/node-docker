@@ -5,3 +5,6 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
         python \
         make \
         g++
+
+# 安装 pnpm
+RUN npm install -g pnpm --registry=https://registry.npmmirror.com
